@@ -20,6 +20,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Browser {
+
+ 
+
 		 static WebDriver dr;
 		 static Properties P;
 	
