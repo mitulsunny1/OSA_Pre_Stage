@@ -20,12 +20,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Browser {
-<<<<<<< HEAD
- public static void main(String[] args) {
-	System.out.println("Opening browser");
-	
- }
-=======
+
+ 
+
 		 static WebDriver dr;
 		 static Properties P;
 	
@@ -68,5 +65,4 @@ public static WebDriver openBrowser(String b) throws IOException{
 }
 
 
->>>>>>> d39bb38b387a8ebe5d01f1018cd2766ab9623496
 }
