@@ -1,8 +1,10 @@
 package com.jfk;
 
+import org.junit.Test;
+
 public class American {
 	
-		
+		@Test
 		public void american () {
 			
 			int a = 5;
