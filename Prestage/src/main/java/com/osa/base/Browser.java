@@ -2,8 +2,6 @@ package com.osa.base;
 
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -11,14 +9,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.testng.annotations.AfterMethod;
-//import org.testng.annotations.Parameters;
-//import org.testng.annotations.Test;
+
 
 
 public class Browser {
-
- 
 
 		 static WebDriver dr;
 		 static Properties P;
@@ -60,6 +54,5 @@ public static WebDriver openBrowser(String b) throws IOException{
 	
 	
 }
-
 
 }
