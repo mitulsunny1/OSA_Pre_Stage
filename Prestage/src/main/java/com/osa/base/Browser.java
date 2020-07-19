@@ -48,7 +48,7 @@ public static WebDriver openBrowser(String b) throws IOException{
 	dr.manage().window().maximize();
 	dr.manage().deleteAllCookies();
 	dr.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-//	dr.get("https://www.facebook.com/");
+	dr.get("https://www.facebook.com/");
 
 	return dr;
 	
