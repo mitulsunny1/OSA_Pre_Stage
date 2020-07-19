@@ -12,11 +12,21 @@ public class ScreenShot {
 	
 	
 	
-	public static void screenshoot(WebDriver dr,String Sname) throws IOException {
-		TakesScreenshot ts=(TakesScreenshot)dr;
-		File  src=ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src,new File("C:\\Users\\azizu\\Desktop\\Gittest\\OSA_Pre_Stage\\Prestage\\target\\Image"+Sname+System.currentTimeMillis()+".jpg"));
+	public static void screenshoot(WebDriver dr,String picturename) throws IOException {
+
+		File file=((TakesScreenshot)dr).getScreenshotAs(OutputType.FILE);
 		
+		String s = System.getProperty("os.name");
+		
+		if(s.contains("Windows"))
+		{
+			FileUtils.copyFile(file, new File("C:\\Users\\azizu\\eclipse-workspace\\Maven_project2\\target\\image"+picturename+System.currentTimeMillis()));
+		}
+		else 
+		{
+			FileUtils.copyFile(file, new File("/Maven_project2/target/images"+picturename+System.currentTimeMillis()));
+		}
+
 		
 	}
 	
