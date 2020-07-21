@@ -24,7 +24,6 @@ public class Utility {
 	public static WebDriver dr;
 	public static WebElement element;
 
-	
 
 	public static Logger getLog(Class clazz) {
 		Logger log=Logger.getLogger(clazz);
