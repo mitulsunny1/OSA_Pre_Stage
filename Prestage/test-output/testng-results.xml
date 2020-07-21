@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14113" started-at="2020-07-13T10:56:13 EDT" finished-at="2020-07-13T10:56:27 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14113" started-at="2020-07-13T10:56:13 EDT" finished-at="2020-07-13T10:56:27 EDT">
+      <class name="com.osa.base.Browser">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.osa.base.Browser@6e6c3152]" name="OpenBrowser" duration-ms="12958" started-at="2020-07-13T10:56:13 EDT" finished-at="2020-07-13T10:56:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.osa.base.Browser@6e6c3152]" name="CloseBrowser" is-config="true" duration-ms="1050" started-at="2020-07-13T10:56:26 EDT" finished-at="2020-07-13T10:56:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.osa.base.Browser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
