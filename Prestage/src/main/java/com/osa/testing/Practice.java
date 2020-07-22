@@ -14,8 +14,12 @@ public class Practice {
 	     double rent= salary*.20;
 			return rent;
 			  
-
+	}
+	
+	public String add(String name) {
 		
+		String s=name;
+		return s;
 		
 	}
 
