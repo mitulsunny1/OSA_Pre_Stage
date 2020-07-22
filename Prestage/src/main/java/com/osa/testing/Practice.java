@@ -11,7 +11,7 @@ public class Practice {
 	      String s1=m.add("Poly") ;
 	      System.out.println(s1);
 	      
-	      int j=m.multi(100, 200);
+	      int j=m.multi(100, 20);
 	      System.out.println(j);
 	     
 	      
