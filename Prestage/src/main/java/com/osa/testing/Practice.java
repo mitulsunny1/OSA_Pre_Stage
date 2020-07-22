@@ -7,6 +7,14 @@ public class Practice {
 		Practice m=new Practice();
 		double utilitibill=m.houserent(5000);
 	      System.out.println(utilitibill);
+	      
+	      String s1=m.add("Poly") ;
+	      System.out.println(s1);
+	      
+	      int j=m.multi(100, 200);
+	      System.out.println(j);
+	     
+	      
 	}
 	  
 	double houserent(int salary) {
@@ -20,6 +28,13 @@ public class Practice {
 		
 		String s=name;
 		return s;
+		
+	}
+	
+	public int multi(int a,int b) {
+		int i=a+b;
+		return b;
+		
 		
 	}
 
