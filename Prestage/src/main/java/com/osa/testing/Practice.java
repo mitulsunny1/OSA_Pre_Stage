@@ -32,8 +32,8 @@ public class Practice {
 	}
 	
 	public int multi(int a,int b) {
-		int i=a+b;
-		return b;
+		int i=a*b;
+		return i;
 		
 		
 	}
