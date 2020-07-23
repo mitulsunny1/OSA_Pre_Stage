@@ -14,7 +14,15 @@ public class Practice {
 	      int j=m.multi(100, 20);
 	      System.out.println(j);
 	     
+	      String t="Our Mother Land";
+	      String reverse=" ";
 	      
+	      String[] s4=t.split(" ");
+	     for(int i=s4.length-1;i>=0;i--) {
+	    	 reverse=reverse.concat(s4[i]).concat(" ");
+	    	 
+	     } 
+	      System.out.println(reverse);
 	}
 	  
 	double houserent(int salary) {
@@ -37,5 +45,7 @@ public class Practice {
 		
 		
 	}
+	
+
 
 }
