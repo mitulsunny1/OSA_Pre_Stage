@@ -1,6 +1,6 @@
 package com.jfk;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class American {
 	
