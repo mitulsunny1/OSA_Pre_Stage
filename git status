@@ -1,0 +1,98 @@
+[1mdiff --git a/Prestage/.classpath b/Prestage/.classpath[m
+[1mindex ebde520..1247f9f 100644[m
+[1m--- a/Prestage/.classpath[m
+[1m+++ b/Prestage/.classpath[m
+[36m@@ -13,7 +13,7 @@[m
+ 			<attribute name="test" value="true"/>[m
+ 		</attributes>[m
+ 	</classpathentry>[m
+[31m-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">[m
+ 		<attributes>[m
+ 			<attribute name="maven.pomderived" value="true"/>[m
+ 		</attributes>[m
+[1mdiff --git a/Prestage/.settings/org.eclipse.jdt.core.prefs b/Prestage/.settings/org.eclipse.jdt.core.prefs[m
+[1mindex ac8e750..b33f257 100644[m
+[1m--- a/Prestage/.settings/org.eclipse.jdt.core.prefs[m
+[1m+++ b/Prestage/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -1,9 +1,16 @@[m
+ eclipse.preferences.version=1[m
+[31m-org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5[m
+[31m-org.eclipse.jdt.core.compiler.compliance=1.5[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=1.7[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=1.7[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.lineNumber=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.localVariable=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.sourceFile=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.assertIdentifier=error[m
+ org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+ org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning[m
+ org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=ignore[m
+ org.eclipse.jdt.core.compiler.processAnnotations=disabled[m
+ org.eclipse.jdt.core.compiler.release=disabled[m
+[31m-org.eclipse.jdt.core.compiler.source=1.5[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=1.7[m
+[1mdiff --git a/Prestage/src/main/java/com/osa/base/PracticeRegular.java b/Prestage/src/main/java/com/osa/base/PracticeRegular.java[m
+[1mindex 510fceb..507f6fe 100644[m
+[1m--- a/Prestage/src/main/java/com/osa/base/PracticeRegular.java[m
+[1m+++ b/Prestage/src/main/java/com/osa/base/PracticeRegular.java[m
+[36m@@ -1,38 +1,23 @@[m
+ package com.osa.base;[m
+ [m
+[31m-public class PracticeRegular {[m
+[31m-	[m
+[31m-	[m
+[31m-	[m
+[31m-	public static void main(String[] args) {[m
+[31m-		verify();[m
+[31m-	}	[m
+[31m-public static void verify() {[m
+[32m+[m[32mimport java.util.Scanner;[m
+ [m
+[31m-	char y='g';[m
+[31m-	[m
+[31m-	switch(y) {[m
+[31m-	[m
+[31m-	case 'a':[m
+[31m-		System.out.println("Angry man");[m
+[31m-	[m
+[31m-	case 'c':[m
+[31m-	System.out.println("Critical man");[m
+[31m-	[m
+[31m-	case 'g':[m
+[31m-		System.out.println("Good Man");[m
+[31m-		break;[m
+[31m-		default:[m
+[31m-			System.out.println("out from criteria");[m
+[31m-		[m
+[31m-	}[m
+[31m-	[m
+[31m-	[m
+[31m-}[m
+[32m+[m[32mpublic class PracticeRegular {[m
+ [m
+ [m
+ [m
+[32m+[m[32mpublic static void main(String[] args) {[m
+[32m+[m	[32mcalculation();[m
+[32m+[m[41m	[m
+ }[m
+ [m
+[32m+[m[32mpublic static void calculation() {[m
+ [m
+[31m-[m
+[32m+[m	[32mString p="Bangladesh is our Motherland";[m
+[32m+[m	[32mString[] p1=p.split("");[m
+[32m+[m	[32mfor(int i=0;i<p1.length;i++) {[m
+[32m+[m		[32mSystem.out.println(p1[i]);[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prestage/target/classes/com/osa/base/Browser.class b/Prestage/target/classes/com/osa/base/Browser.class[m
+[1mindex c974ae0..e484868 100644[m
+Binary files a/Prestage/target/classes/com/osa/base/Browser.class and b/Prestage/target/classes/com/osa/base/Browser.class differ
