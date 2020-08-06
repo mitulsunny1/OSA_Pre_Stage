@@ -26,7 +26,7 @@ public class Browser {
 	
 public static void main(String[] args) throws IOException {
 	P = new Properties();
-	P.load(new FileInputStream("C:\\Users\\shihab\\Desktop\\GitTest\\OSA_Pre_Stage\\Prestage\\src\\confic.properties"));
+	P.load(new FileInputStream("/Users/mdalamin/Desktop/chromedriver"));
 	String b=P.getProperty("browser");
 	openBrowser(b).get("https://osaconsultingtech.com/");
 	
@@ -39,14 +39,14 @@ public static WebDriver openBrowser(String b) throws IOException{
 	
 	if(b.equals("Chrome")) {
 		String key="webdriver.chrome.driver";
-		String value="C:\\Users\\shihab\\Desktop\\Osa 1221201905a\\Driver\\chromedriver.exe";
+		String value="/Users/mdalamin/Desktop/chromedriver";
 		System.setProperty(key, value);
 		dr = new ChromeDriver();
 				
 		}
 	else if (b.equals("firefox")) {
 		String key="webdriver.gecko.driver";
-		String value ="C:\\Users\\shihab\\Desktop\\Osa 1221201905a\\Driver\\geckodriver.exe";
+		String value ="/Users/mdalamin/Desktop/geckodriver";
 		System.setProperty(key, value);
 		dr = new FirefoxDriver(); 
 		
@@ -55,7 +55,7 @@ public static WebDriver openBrowser(String b) throws IOException{
 	dr.manage().window().maximize();
 	dr.manage().deleteAllCookies();
 	dr.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-//	dr.get("https://www.facebook.com/");
+	dr.get("https://www.facebook.com/");
 
 	return dr;
 	
