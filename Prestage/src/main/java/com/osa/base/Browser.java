@@ -13,13 +13,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Browser {
-<<<<<<< HEAD
+
 	
- public static void main(String[] args) {
-	System.out.println("Hellow World");
-	
- }
-=======
+
 
 		 static WebDriver dr;
 		 static Properties P;
@@ -62,5 +58,4 @@ public static WebDriver openBrowser(String b) throws IOException{
 	
 }
 
->>>>>>> a0017b6a1a17f9ec8659192db660b7b75440a325
 }
